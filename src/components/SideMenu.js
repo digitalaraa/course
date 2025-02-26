@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const SideMenu = () => {
   return (
@@ -8,9 +9,9 @@ const SideMenu = () => {
         <div className="tekup-sidemenu-column">
           <div className="tekup-sidemenu-body">
             <div className="tekup-sidemenu-logo">
-              <a href="">
+              <Link to="/about">
                 <img src="assets/images/v1/logo.svg" alt="Logo" />
-              </a>
+              </Link>
             </div>
             <p>
               Vast numbers of employees now work remotely, and it’s too late to
@@ -32,16 +33,32 @@ const SideMenu = () => {
               <div className="tekup-contact-info">
                 <i className="ri-mail-fill" />
                 <h5>Contact</h5>
-                <a href="mailto:name@email.com">info@mthemeus.com</a>
-                <a href="tel:123">518-564-3200</a>
+                <a href="mailto:info@mthemeus.com">info@mthemeus.com</a>
+                <a href="tel:5185643200">518-564-3200</a>
               </div>
             </div>
             <div className="tekup-social-icon-box">
               <ul>
-                <li><a href="https://www.facebook.com/"><i className="ri-facebook-fill" /></a></li>
-                <li><a href="https://www.linkedin.com/"><i className="ri-linkedin-fill" /></a></li>
-                <li><a href="https://twitter.com/"><i className="ri-twitter-fill" /></a></li>
-                <li><a href="https://www.instagram.com/"><i className="ri-instagram-fill" /></a></li>
+                <li>
+                  <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+                    <i className="ri-facebook-fill" />
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+                    <i className="ri-linkedin-fill" />
+                  </a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
+                    <i className="ri-twitter-fill" />
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                    <i className="ri-instagram-fill" />
+                  </a>
+                </li>
               </ul>
             </div>
           </div>

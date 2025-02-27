@@ -83,7 +83,7 @@ const ContactSection = () => {
                   <i className="ri-mail-fill" />
                   <h5>Contact</h5>
                   <a href="mailto:digitalaraa@gmail.com">digitalaraa@gmail.com</a>
-                  <a href="tel:+919843442155">9843442155</a>
+                  <a href="tel:+918667853720">8667853720</a>
                 </div>
               </div>
             </div>

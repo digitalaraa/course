@@ -1,22 +1,15 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const EnrollButton = () => {
-  const handleClick = (event) => {
-    event.preventDefault(); // Prevent default behavior
-    console.log("Enroll Now button clicked!");
-    // Add further logic (e.g., open modal, navigate dynamically)
-  };
-
   return (
     <div className="rbt-btn-wrapper">
-      <button
-        className="rbt-btn rbt-marquee-btn marquee-auto btn-border-gradient rounded-full text-sm transform-none"
-        onClick={handleClick}
-      >
+      <Link to="/" className="rbt-btn rbt-marquee-btn marquee-auto btn-border-gradient rounded-full text-sm transform-none">
         <span data-text="Enroll Now">Enroll Now</span>
-      </button>
+      </Link>
     </div>
   );
 };
 
 export default EnrollButton;
+vvvvvvvvvvv

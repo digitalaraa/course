@@ -603,11 +603,54 @@
 // }
 
 // export default Courses;
-
-import React from "react";
+import React, { useState } from "react";
 import courseBg1 from "../assets/images/course-bg-1.webp";
 
+// Dummy course data (replace with API call if needed)
+const initialCourses = [
+    {
+        id: 1,
+        title: "Master Data Science from Scratch",
+        description: "Empower your career with data science skills that are in high demand across industries.",
+        lessons: 45,
+        rating: 4.8,
+        category: "UI/UX",
+        discount: "20% Off",
+        image: courseBg1
+    },
+    {
+        id: 2,
+        title: "Complete React Developer Course",
+        description: "Master modern React with hooks, context, and advanced state management.",
+        lessons: 52,
+        rating: 4.7,
+        category: "Frontend Development",
+        discount: "30% Off",
+        image: courseBg1
+    }
+];
+
+// More dummy courses for "Load More"
+const moreCourses = [
+    {
+        id: 3,
+        title: "Full Stack Web Development Bootcamp",
+        description: "Learn frontend & backend technologies, databases, and deployment.",
+        lessons: 60,
+        rating: 4.9,
+        category: "Full Stack",
+        discount: "25% Off",
+        image: courseBg1
+    }
+];
+
 function Courses() {
+    const [courses, setCourses] = useState(initialCourses);
+
+    const loadMoreCourses = () => {
+        setCourses([...courses, ...moreCourses]);
+    };
+
     return (
         <section className="bd-course-area section-space" style={{ paddingTop: "260px" }}>
             <div className="container">
@@ -615,83 +658,85 @@ function Courses() {
                     <div className="course-top-meta d-flex-between flex-wrap-small mb-30 gap-30">
                         <div className="bd-top-sorting-left">
                             <h6 className="bd-sorting-item-found">
-                                We found <span>14</span> courses available for you
+                                We found <span>{courses.length}</span> courses available for you
                             </h6>
                         </div>
                     </div>
                 </div>
+
                 <div className="row gy-30">
                     <div className="col-lg-12">
-                        {/* Course Grid Style */}
+                        {/* Course Grid */}
                         <div className="display-layout-grid active">
                             <div className="row g-30">
-                                <div className="col-xxl-4 col-xl-6 col-lg-6 col-md-6">
-                                    <div className="bd-course-wrapper style-two">
-                                        <div className="bd-course-thumb-wrapper bd-course-thumb-style small-style p-relative">
-                                            <div className="bd-course-badge">
-                                                <a className="bd-badge badge-warning" href="javascript:void(0);">
-                                                    20% Off
-                                                </a>
-                                            </div>
-                                            <div className="bd-course-thumb-bg bg-1">
-                                                <img src={courseBg1} alt="Course Background" />
-                                            </div>
-                                            <div className="small-text bg-text-color">
-                                                Getting Started
-                                            </div>
-                                            <div className="bd-course-overly-title fs-200 text-white">
-                                                UI/UX
-                                            </div>
-                                        </div>
-                                        <div className="bd-course-content">
-                                            <div className="bd-course-content-bottom mb-10">
-                                                <div className="bd-course-lesson has-separator">
-                                                    <span>
-                                                        <i className="fa-solid fa-clock"></i> 45 Lessons
-                                                    </span>
+                                {courses.map((course) => (
+                                    <div key={course.id} className="col-xxl-4 col-xl-6 col-lg-6 col-md-6">
+                                        <div className="bd-course-wrapper style-two">
+                                            <div className="bd-course-thumb-wrapper bd-course-thumb-style small-style p-relative">
+                                                <div className="bd-course-badge">
+                                                    <span className="bd-badge badge-warning">{course.discount}</span>
+                                                </div>
+                                                <div
+                                                    className="bd-course-thumb-bg"
+                                                    style={{
+                                                        backgroundImage: `url(${course.image})`,
+                                                        backgroundSize: "cover",
+                                                        backgroundPosition: "center"
+                                                    }}
+                                                ></div>
+                                                <div className="small-text bg-text-color">{course.category}</div>
+                                                <div className="bd-course-overly-title fs-200 text-white">
+                                                    {course.category}
                                                 </div>
                                             </div>
-                                            <h5 className="bd-course-title underline mb-10">
-                                                <a href="courses-details.html">
-                                                    Master Data Science from Scratch
-                                                </a>
-                                            </h5>
-                                            <p className="bd-course-description mb-10">
-                                                Empower your career with data science skills that are in high demand across industries.
-                                            </p>
-                                            <div className="bd-course-rating d-inline-flex flex-wrap align-items-center gap-10 mb-30">
-                                                <div className="bd-course-rating-icon d-flex rating-color">
-                                                    <i className="fa-solid fa-star"></i>
-                                                    <i className="fa-solid fa-star"></i>
-                                                    <i className="fa-solid fa-star"></i>
-                                                    <i className="fa-solid fa-star"></i>
-                                                    <i className="fa-solid fa-star-half"></i>
+                                            <div className="bd-course-content">
+                                                <div className="bd-course-content-bottom mb-10">
+                                                    <div className="bd-course-lesson has-separator">
+                                                        <span>
+                                                            <i className="fa-solid fa-clock"></i> {course.lessons} Lessons
+                                                        </span>
+                                                    </div>
                                                 </div>
-                                                <div className="bd-course-rating-text">
-                                                    <span>( 4.8/5 Ratings )</span>
+                                                <h5 className="bd-course-title underline mb-10">
+                                                    <a href="courses-details.html">{course.title}</a>
+                                                </h5>
+                                                <p className="bd-course-description mb-10">{course.description}</p>
+                                                <div className="bd-course-rating d-inline-flex flex-wrap align-items-center gap-10 mb-30">
+                                                    <div className="bd-course-rating-icon d-flex rating-color">
+                                                        <i className="fa-solid fa-star"></i>
+                                                        <i className="fa-solid fa-star"></i>
+                                                        <i className="fa-solid fa-star"></i>
+                                                        <i className="fa-solid fa-star"></i>
+                                                        <i className="fa-solid fa-star-half"></i>
+                                                    </div>
+                                                    <div className="bd-course-rating-text">
+                                                        <span>({course.rating}/5 Ratings)</span>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div className="bd-course-btn">
-                                                <a className="bd-btn btn-outline-primary" href="courses-details.html">
-                                                    Enroll Now
-                                                </a>
+                                                <div className="bd-course-btn">
+                                                    <a className="bd-btn btn-outline-primary" href="courses-details.html">
+                                                        Enroll Now
+                                                    </a>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                ))}
                             </div>
                         </div>
-                        {/* Course Grid Style End */}
+                        {/* Course Grid End */}
 
                         {/* Load More Button */}
-                        <div className="bd-course-more-btn d-flex justify-content-center mt-50">
-                          <button className="bd-btn btn-outline-border-primary">
-                              Load More
-                              <span className="right-icon">
-                                  <i className="fa-duotone fa-spinner"></i>
-                              </span>
-                          </button>
-                      </div>
+                        {courses.length < 3 && (
+                            <div className="bd-course-more-btn d-flex justify-content-center mt-50">
+                                <button className="bd-btn btn-outline-border-primary" onClick={loadMoreCourses}>
+                                    Load More
+                                    <span className="right-icon">
+                                        <i className="fa-solid fa-spinner fa-spin"></i>
+                                    </span>
+                                </button>
+                            </div>
+                        )}
                         {/* Load More End */}
                     </div>
                 </div>
@@ -701,4 +746,3 @@ function Courses() {
 }
 
 export default Courses;
-

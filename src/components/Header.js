@@ -6,6 +6,7 @@ import HeroSlider from "./HeroSlider";
 import HeaderTop from "./HeaderTop";
 
 import digitalaraaLogo from '../assets/images/logo/digitalaraa-logo.png'; // Ensure to include the file extension
+import EnrollButton from "./EnrollButton";
 
 function Header() {
   
@@ -20,7 +21,7 @@ function Header() {
       >
         <HeaderTop />
 
-        <div className="container-fluid">
+        <div className="container-fluid  bg-dark">
           <div className="tekup-header-bottom border_bottom">
             <nav className="navbar site-navbar">
               {/* Brand Logo */}
@@ -33,6 +34,7 @@ function Header() {
                   />
                 </Link>
               </div>
+              
 
               <div className="menu-block-wrapper">
                 <div className="menu-overlay" />
@@ -81,6 +83,8 @@ function Header() {
                     </li>
                   </ul>
                 </nav>
+                {/* Show EnrollButton only on the /course page */}
+              {location.pathname === "/course" && <EnrollButton />}
               </div>
 
               {/* Mobile Menu Trigger */}

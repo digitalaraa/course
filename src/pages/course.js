@@ -1,10 +1,604 @@
 import React from "react";
+import courseBg1 from "../assets/images/course-bg-1.webp";
+import courseBg2 from "../assets/images/course-bg-2.webp";
+import courseBg3 from "../assets/images/course-bg-3.webp";
+import courseBg4 from "../assets/images/course-bg-4.webp";
+import courseBg5 from "../assets/images/course-bg-5.webp";
+import courseBg6 from "../assets/images/course-bg-6.webp";
+import courseBg7 from "../assets/images/course-bg-7.webp";
+import courseBg8 from "../assets/images/course-bg-8.webp";
+import courseBg9 from "../assets/images/course-bg-9.webp";
 
 function Courses() {
     return (
-        <>
-        <h1>Courses</h1>
-    </>
+        <section className="bd-course-area section-space" style={{ paddingTop: "260px"}}>
+        <div className="container">
+          <div className="row g-30 align-items-center justify-content-between mb-30">
+            <div className="course-top-meta d-flex-between flex-wrap-small mb-30 gap-30">
+              <div className="bd-top-sorting-left">
+                <h6 className="bd-sorting-item-found">
+                  We found <span>14</span> courses available for you
+                </h6>
+              </div>
+            </div>
+          </div>
+          <div className="row gy-30">
+            <div className="col-lg-12">
+              {/* course grid style */}
+              <div className="display-layout-grid active">
+                <div className="row g-30">
+                  <div className="col-xxl-4 col-xl-6 col-lg-6 col-md-6">
+                    <div className="bd-course-wrapper style-two">
+                      <div className="bd-course-thumb-wrapper bd-course-thumb-style small-style p-relative">
+                        <div className="bd-course-badge">
+                          <a className="bd-badge badge-warning" href="#">
+                            20% Off
+                          </a>
+                        </div>
+                        <div className="bd-course-thumb-bg bg-1">
+                        <img src={courseBg1} alt="Course Background" />
+                        </div>
+                        <div className="bd-course-thumb-instructor center">
+                          {/* <img
+                            src="assets/images/course/course-instructor-1.webp"
+                            alt="instructor"
+                          /> */}
+                        </div>
+                        <div className="small-text bg-text-color">
+                          Getting Started
+                        </div>
+                        <div className="bd-course-overly-title fs-200 text-white">
+                          UI/UX
+                        </div>
+                      </div>
+                      <div className="bd-course-content">
+                        <div className="bd-course-content-bottom mb-10">
+                          <div className="bd-course-lesson has-separator">
+                            <span>
+                              <i className="fa-light fa-clock" /> 45 Lessons
+                            </span>
+                          </div>
+                        </div>
+                        <h5 className="bd-course-title underline mb-10">
+                          <a href="courses-details.html">
+                            Master Data Science from Scratch
+                          </a>
+                        </h5>
+                        <p className="bd-course-description mb-10">
+                          Empower your career with data science skills that are in
+                          high demand across industries.
+                        </p>
+                        <div className="bd-course-rating d-inline-flex flex-wrap align-items-center gap-10 mb-30">
+                          <div className="bd-course-rating-icon d-flex rating-color">
+                            <i className="fa-solid fa-star" />
+                            <i className="fa-solid fa-star" />
+                            <i className="fa-solid fa-star" />
+                            <i className="fa-solid fa-star" />
+                            <i className="fa-solid fa-star-half" />
+                          </div>
+                          <div className="bd-course-rating-text">
+                            <span>( 4.8/5 Ratings )</span>
+                          </div>
+                        </div>
+                        <div className="bd-course-btn">
+                          <a
+                            className="bd-btn btn-outline-primary"
+                            href="courses-details.html"
+                          >
+                            Enroll Now
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-xxl-4 col-xl-6 col-lg-6 col-md-6">
+                    <div className="bd-course-wrapper style-two">
+                      <div className="bd-course-thumb-wrapper bd-course-thumb-style small-style p-relative">
+                        <div className="bd-course-badge">
+                          <a className="bd-badge badge-warning" href="#">
+                            20% Off
+                          </a>
+                        </div>
+                        <div className="bd-course-thumb-bg bg-2">
+                        <img src={courseBg2} alt="Course Background" />
+                        </div>
+                       
+                        <div className="small-text bg-text-color">
+                          Getting Started
+                        </div>
+                        <div className="bd-course-overly-title fs-200 text-white">
+                          UI/UX
+                        </div>
+                      </div>
+                      <div className="bd-course-content">
+                        <div className="bd-course-content-bottom mb-10">
+                          <div className="bd-course-lesson has-separator">
+                            <span>
+                              <i className="fa-light fa-clock" /> 45 Lessons
+                            </span>
+                          </div>
+                        </div>
+                        <h5 className="bd-course-title underline mb-10">
+                          <a href="courses-details.html">
+                            Master Data Science from Scratch
+                          </a>
+                        </h5>
+                        <p className="bd-course-description mb-10">
+                          Empower your career with data science skills that are in
+                          high demand across industries.
+                        </p>
+                        <div className="bd-course-rating d-inline-flex flex-wrap align-items-center gap-10 mb-30">
+                          <div className="bd-course-rating-icon d-flex rating-color">
+                            <i className="fa-solid fa-star" />
+                            <i className="fa-solid fa-star" />
+                            <i className="fa-solid fa-star" />
+                            <i className="fa-solid fa-star" />
+                            <i className="fa-solid fa-star-half" />
+                          </div>
+                          <div className="bd-course-rating-text">
+                            <span>( 4.8/5 Ratings )</span>
+                          </div>
+                        </div>
+                        <div className="bd-course-btn">
+                          <a
+                            className="bd-btn btn-outline-primary"
+                            href="courses-details.html"
+                          >
+                            Enroll Now
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="col-xxl-4 col-xl-6 col-lg-6 col-md-6">
+                    <div className="bd-course-wrapper style-two">
+                      <div className="bd-course-thumb-wrapper bd-course-thumb-style small-style p-relative">
+                        <div className="bd-course-badge">
+                          <a className="bd-badge badge-warning" href="#">
+                            20% Off
+                          </a>
+                        </div>
+                        <div className="bd-course-thumb-bg bg-3">
+                        <img src={courseBg3} alt="Course Background" />
+                        </div>
+                       
+                        <div className="small-text bg-text-color">
+                          Getting Started
+                        </div>
+                        <div className="bd-course-overly-title fs-200 text-white">
+                          UI/UX
+                        </div>
+                      </div>
+                      <div className="bd-course-content">
+                        <div className="bd-course-content-bottom mb-10">
+                          <div className="bd-course-lesson has-separator">
+                            <span>
+                              <i className="fa-light fa-clock" /> 45 Lessons
+                            </span>
+                          </div>
+                        </div>
+                        <h5 className="bd-course-title underline mb-10">
+                          <a href="courses-details.html">
+                            Master Data Science from Scratch
+                          </a>
+                        </h5>
+                        <p className="bd-course-description mb-10">
+                          Empower your career with data science skills that are in
+                          high demand across industries.
+                        </p>
+                        <div className="bd-course-rating d-inline-flex flex-wrap align-items-center gap-10 mb-30">
+                          <div className="bd-course-rating-icon d-flex rating-color">
+                            <i className="fa-solid fa-star" />
+                            <i className="fa-solid fa-star" />
+                            <i className="fa-solid fa-star" />
+                            <i className="fa-solid fa-star" />
+                            <i className="fa-solid fa-star-half" />
+                          </div>
+                          <div className="bd-course-rating-text">
+                            <span>( 4.8/5 Ratings )</span>
+                          </div>
+                        </div>
+                        <div className="bd-course-btn">
+                          <a
+                            className="bd-btn btn-outline-primary"
+                            href="courses-details.html"
+                          >
+                            Enroll Now
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div className="col-xxl-4 col-xl-6 col-lg-6 col-md-6">
+                    <div className="bd-course-wrapper style-two">
+                      <div className="bd-course-thumb-wrapper bd-course-thumb-style small-style p-relative">
+                        <div className="bd-course-badge">
+                          <a className="bd-badge badge-warning" href="#">
+                            20% Off
+                          </a>
+                        </div>
+                        <div className="bd-course-thumb-bg bg-4">
+                        <img src={courseBg4} alt="Course Background" />
+                        </div>
+                       
+                        <div className="small-text bg-text-color">
+                          Getting Started
+                        </div>
+                        <div className="bd-course-overly-title fs-200 text-white">
+                          UI/UX
+                        </div>
+                      </div>
+                      <div className="bd-course-content">
+                        <div className="bd-course-content-bottom mb-10">
+                          <div className="bd-course-lesson has-separator">
+                            <span>
+                              <i className="fa-light fa-clock" /> 45 Lessons
+                            </span>
+                          </div>
+                        </div>
+                        <h5 className="bd-course-title underline mb-10">
+                          <a href="courses-details.html">
+                            Master Data Science from Scratch
+                          </a>
+                        </h5>
+                        <p className="bd-course-description mb-10">
+                          Empower your career with data science skills that are in
+                          high demand across industries.
+                        </p>
+                        <div className="bd-course-rating d-inline-flex flex-wrap align-items-center gap-10 mb-30">
+                          <div className="bd-course-rating-icon d-flex rating-color">
+                            <i className="fa-solid fa-star" />
+                            <i className="fa-solid fa-star" />
+                            <i className="fa-solid fa-star" />
+                            <i className="fa-solid fa-star" />
+                            <i className="fa-solid fa-star-half" />
+                          </div>
+                          <div className="bd-course-rating-text">
+                            <span>( 4.8/5 Ratings )</span>
+                          </div>
+                        </div>
+                        <div className="bd-course-btn">
+                          <a
+                            className="bd-btn btn-outline-primary"
+                            href="courses-details.html"
+                          >
+                            Enroll Now
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div className="col-xxl-4 col-xl-6 col-lg-6 col-md-6">
+                    <div className="bd-course-wrapper style-two">
+                      <div className="bd-course-thumb-wrapper bd-course-thumb-style small-style p-relative">
+                        <div className="bd-course-badge">
+                          <a className="bd-badge badge-warning" href="#">
+                            20% Off
+                          </a>
+                        </div>
+                        <div className="bd-course-thumb-bg bg-5">
+                        <img src={courseBg5} alt="Course Background" />
+                        </div>
+                       
+                        <div className="small-text bg-text-color">
+                          Getting Started
+                        </div>
+                        <div className="bd-course-overly-title fs-200 text-white">
+                          UI/UX
+                        </div>
+                      </div>
+                      <div className="bd-course-content">
+                        <div className="bd-course-content-bottom mb-10">
+                          <div className="bd-course-lesson has-separator">
+                            <span>
+                              <i className="fa-light fa-clock" /> 45 Lessons
+                            </span>
+                          </div>
+                        </div>
+                        <h5 className="bd-course-title underline mb-10">
+                          <a href="courses-details.html">
+                            Master Data Science from Scratch
+                          </a>
+                        </h5>
+                        <p className="bd-course-description mb-10">
+                          Empower your career with data science skills that are in
+                          high demand across industries.
+                        </p>
+                        <div className="bd-course-rating d-inline-flex flex-wrap align-items-center gap-10 mb-30">
+                          <div className="bd-course-rating-icon d-flex rating-color">
+                            <i className="fa-solid fa-star" />
+                            <i className="fa-solid fa-star" />
+                            <i className="fa-solid fa-star" />
+                            <i className="fa-solid fa-star" />
+                            <i className="fa-solid fa-star-half" />
+                          </div>
+                          <div className="bd-course-rating-text">
+                            <span>( 4.8/5 Ratings )</span>
+                          </div>
+                        </div>
+                        <div className="bd-course-btn">
+                          <a
+                            className="bd-btn btn-outline-primary"
+                            href="courses-details.html"
+                          >
+                            Enroll Now
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div className="col-xxl-4 col-xl-6 col-lg-6 col-md-6">
+                    <div className="bd-course-wrapper style-two">
+                      <div className="bd-course-thumb-wrapper bd-course-thumb-style small-style p-relative">
+                        <div className="bd-course-badge">
+                          <a className="bd-badge badge-warning" href="#">
+                            20% Off
+                          </a>
+                        </div>
+                        <div className="bd-course-thumb-bg bg-6">
+                        <img src={courseBg6} alt="Course Background" />
+                        </div>
+                       
+                        <div className="small-text bg-text-color">
+                          Getting Started
+                        </div>
+                        <div className="bd-course-overly-title fs-200 text-white">
+                          UI/UX
+                        </div>
+                      </div>
+                      <div className="bd-course-content">
+                        <div className="bd-course-content-bottom mb-10">
+                          <div className="bd-course-lesson has-separator">
+                            <span>
+                              <i className="fa-light fa-clock" /> 45 Lessons
+                            </span>
+                          </div>
+                        </div>
+                        <h5 className="bd-course-title underline mb-10">
+                          <a href="courses-details.html">
+                            Master Data Science from Scratch
+                          </a>
+                        </h5>
+                        <p className="bd-course-description mb-10">
+                          Empower your career with data science skills that are in
+                          high demand across industries.
+                        </p>
+                        <div className="bd-course-rating d-inline-flex flex-wrap align-items-center gap-10 mb-30">
+                          <div className="bd-course-rating-icon d-flex rating-color">
+                            <i className="fa-solid fa-star" />
+                            <i className="fa-solid fa-star" />
+                            <i className="fa-solid fa-star" />
+                            <i className="fa-solid fa-star" />
+                            <i className="fa-solid fa-star-half" />
+                          </div>
+                          <div className="bd-course-rating-text">
+                            <span>( 4.8/5 Ratings )</span>
+                          </div>
+                        </div>
+                        <div className="bd-course-btn">
+                          <a
+                            className="bd-btn btn-outline-primary"
+                            href="courses-details.html"
+                          >
+                            Enroll Now
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                 
+
+                  <div className="col-xxl-4 col-xl-6 col-lg-6 col-md-6">
+                    <div className="bd-course-wrapper style-two">
+                      <div className="bd-course-thumb-wrapper bd-course-thumb-style small-style p-relative">
+                        <div className="bd-course-badge">
+                          <a className="bd-badge badge-warning" href="#">
+                            20% Off
+                          </a>
+                        </div>
+                        <div className="bd-course-thumb-bg bg-7">
+                        <img src={courseBg7} alt="Course Background" />
+                        </div>
+                        
+                        <div className="small-text bg-text-color">
+                          Getting Started
+                        </div>
+                        <div className="bd-course-overly-title fs-200 text-white">
+                          UI/UX
+                        </div>
+                      </div>
+                      <div className="bd-course-content">
+                        <div className="bd-course-content-bottom mb-10">
+                          <div className="bd-course-lesson has-separator">
+                            <span>
+                              <i className="fa-light fa-clock" /> 45 Lessons
+                            </span>
+                          </div>
+                        </div>
+                        <h5 className="bd-course-title underline mb-10">
+                          <a href="courses-details.html">
+                            Master Data Science from Scratch
+                          </a>
+                        </h5>
+                        <p className="bd-course-description mb-10">
+                          Empower your career with data science skills that are in
+                          high demand across industries.
+                        </p>
+                        <div className="bd-course-rating d-inline-flex flex-wrap align-items-center gap-10 mb-30">
+                          <div className="bd-course-rating-icon d-flex rating-color">
+                            <i className="fa-solid fa-star" />
+                            <i className="fa-solid fa-star" />
+                            <i className="fa-solid fa-star" />
+                            <i className="fa-solid fa-star" />
+                            <i className="fa-solid fa-star-half" />
+                          </div>
+                          <div className="bd-course-rating-text">
+                            <span>( 4.8/5 Ratings )</span>
+                          </div>
+                        </div>
+                        <div className="bd-course-btn">
+                          <a
+                            className="bd-btn btn-outline-primary"
+                            href="courses-details.html"
+                          >
+                            Enroll Now
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="col-xxl-4 col-xl-6 col-lg-6 col-md-6">
+                    <div className="bd-course-wrapper style-two">
+                      <div className="bd-course-thumb-wrapper bd-course-thumb-style small-style p-relative">
+                        <div className="bd-course-badge">
+                          <a className="bd-badge badge-warning" href="#">
+                            20% Off
+                          </a>
+                        </div>
+                        <div className="bd-course-thumb-bg bg-8">
+                        <img src={courseBg8} alt="Course Background" />
+                        </div>
+                       
+                        <div className="small-text bg-text-color">
+                          Getting Started
+                        </div>
+                        <div className="bd-course-overly-title fs-200 text-white">
+                          UI/UX
+                        </div>
+                      </div>
+                      <div className="bd-course-content">
+                        <div className="bd-course-content-bottom mb-10">
+                          <div className="bd-course-lesson has-separator">
+                            <span>
+                              <i className="fa-light fa-clock" /> 45 Lessons
+                            </span>
+                          </div>
+                        </div>
+                        <h5 className="bd-course-title underline mb-10">
+                          <a href="courses-details.html">
+                            Master Data Science from Scratch
+                          </a>
+                        </h5>
+                        <p className="bd-course-description mb-10">
+                          Empower your career with data science skills that are in
+                          high demand across industries.
+                        </p>
+                        <div className="bd-course-rating d-inline-flex flex-wrap align-items-center gap-10 mb-30">
+                          <div className="bd-course-rating-icon d-flex rating-color">
+                            <i className="fa-solid fa-star" />
+                            <i className="fa-solid fa-star" />
+                            <i className="fa-solid fa-star" />
+                            <i className="fa-solid fa-star" />
+                            <i className="fa-solid fa-star-half" />
+                          </div>
+                          <div className="bd-course-rating-text">
+                            <span>( 4.8/5 Ratings )</span>
+                          </div>
+                        </div>
+                        <div className="bd-course-btn">
+                          <a
+                            className="bd-btn btn-outline-primary"
+                            href="courses-details.html"
+                          >
+                            Enroll Now
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div className="col-xxl-4 col-xl-6 col-lg-6 col-md-6">
+                    <div className="bd-course-wrapper style-two">
+                      <div className="bd-course-thumb-wrapper bd-course-thumb-style small-style p-relative">
+                        <div className="bd-course-badge">
+                          <a className="bd-badge badge-warning" href="#">
+                            20% Off
+                          </a>
+                        </div>
+                        <div className="bd-course-thumb-bg bg-9">
+                        <img src={courseBg9} alt="Course Background" />
+                        </div>
+                        
+                        <div className="small-text bg-text-color">
+                          Getting Started
+                        </div>
+                        <div className="bd-course-overly-title fs-200 text-white">
+                          UI/UX
+                        </div>
+                      </div>
+                      <div className="bd-course-content">
+                        <div className="bd-course-content-bottom mb-10">
+                          <div className="bd-course-lesson has-separator">
+                            <span>
+                              <i className="fa-light fa-clock" /> 45 Lessons
+                            </span>
+                          </div>
+                        </div>
+                        <h5 className="bd-course-title underline mb-10">
+                          <a href="courses-details.html">
+                            Master Data Science from Scratch
+                          </a>
+                        </h5>
+                        <p className="bd-course-description mb-10">
+                          Empower your career with data science skills that are in
+                          high demand across industries.
+                        </p>
+                        <div className="bd-course-rating d-inline-flex flex-wrap align-items-center gap-10 mb-30">
+                          <div className="bd-course-rating-icon d-flex rating-color">
+                            <i className="fa-solid fa-star" />
+                            <i className="fa-solid fa-star" />
+                            <i className="fa-solid fa-star" />
+                            <i className="fa-solid fa-star" />
+                            <i className="fa-solid fa-star-half" />
+                          </div>
+                          <div className="bd-course-rating-text">
+                            <span>( 4.8/5 Ratings )</span>
+                          </div>
+                        </div>
+                        <div className="bd-course-btn">
+                          <a
+                            className="bd-btn btn-outline-primary"
+                            href="courses-details.html"
+                          >
+                            Enroll Now
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+                </div>
+              </div>
+              {/* course grid style end */}
+            
+              {/* course list style end */}
+              {/* course-more style */}
+              <div className="bd-course-more-btn d-flex justify-content-center mt-50">
+                <a className="bd-btn btn-outline-border-primary" href="#">
+                  Load More{" "}
+                  <span className="right-icon">
+                    <i className="fa-duotone fa-spinner" />
+                  </span>
+                </a>
+              </div>
+              {/* course-more style end */}
+            </div>
+           
+          </div>
+        </div>
+      </section>
+      
     )
 }
 

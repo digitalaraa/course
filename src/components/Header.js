@@ -6,7 +6,6 @@ import HeroSlider from "./HeroSlider";
 import HeaderTop from "./HeaderTop";
 
 import digitalaraaLogo from '../assets/images/logo/digitalaraa-logo.png'; // Ensure to include the file extension
-import EnrollButton from "./EnrollButton";
 
 function Header() {
   
@@ -84,7 +83,7 @@ function Header() {
                   </ul>
                 </nav>
                 {/* Show EnrollButton only on the /course page */}
-              {location.pathname === "/course" && <EnrollButton />}
+              
               </div>
 
               {/* Mobile Menu Trigger */}

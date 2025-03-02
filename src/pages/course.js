@@ -685,13 +685,13 @@ function Courses() {
 
                         {/* Load More Button */}
                         <div className="bd-course-more-btn d-flex justify-content-center mt-50">
-                            <a className="bd-btn btn-outline-border-primary" href="javascript:void(0);">
-                                Load More{" "}
-                                <span className="right-icon">
-                                    <i className="fa-duotone fa-spinner"></i>
-                                </span>
-                            </a>
-                        </div>
+                          <button className="bd-btn btn-outline-border-primary">
+                              Load More
+                              <span className="right-icon">
+                                  <i className="fa-duotone fa-spinner"></i>
+                              </span>
+                          </button>
+                      </div>
                         {/* Load More End */}
                     </div>
                 </div>

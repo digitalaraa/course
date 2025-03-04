@@ -1367,9 +1367,14 @@ function Courses() {
                                                         </div>
                                                      </div>
                                                     </div> */}
-                                                <h5 className="bd-course-title underline mb-10">
+                                                {/* <h5 className="bd-course-title underline mb-10">
                                                     <a href="courses-details.html">{course.title}</a>
-                                                </h5>
+                                                </h5> */}
+                                                <div className="bd-course-title-wrapper" style={{ minHeight: "70px", display: "flex", alignItems: "center" }}>
+                                                    <h5 className="bd-course-title underline mb-10" style={{ margin: "0", lineHeight: "1.4" }}>
+                                                        <a href="courses-details.html">{course.title}</a>
+                                                    </h5>
+                                                </div>
                                                 <p className="bd-course-description mb-10" style={{ fontSize: course.title.length > 40 ? "18px" : "20px" }}>{course.description}</p>
                                                 <div className="bd-course-btn-old tekup-default-btn" style={{ textAlign: "left", borderRadius: "5px", paddingTop: "10px", paddingBottom: "13px" }}>
                                                     <a className="bd-btn-old btn-outline-primary-old" href="courses-details.html" style={{ display: "inline-block", color: "#fff", width: "auto", paddingTop: "5px", minWidth: "120px" }}>

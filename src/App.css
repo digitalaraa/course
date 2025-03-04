@@ -36,3 +36,9 @@
     transform: rotate(360deg);
   }
 }
+
+.courses__item .avg-rating i {
+  color: #f8bc24;
+  letter-spacing: 0;
+  margin-right: 5px;
+}

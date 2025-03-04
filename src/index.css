@@ -2427,3 +2427,45 @@ code {
 .p-relative {
   position: relative;
 }
+
+.bd-course-thumb-style .bd-course-thumb-bg {
+  border-radius: 16px 16px 0 0;
+  padding: 15px 15px;
+  height: 100% !important;
+  min-height: 250px;
+}
+
+.bd-course-wrapper.style-two {
+  border: 1px solid #B5B5C3;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.bd-course-thumb-style.small-style .bd-course-overly-title {
+  font-size: 50px;
+}
+
+.bd-course-btn .btn-outline-primary {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  padding: 10px 19px;
+  align-items: center;
+  gap: 6px;
+  border-radius: 50px;
+  border: 1px solid #000;
+  background: var(--tg-theme-secondary);
+  box-shadow: 4px 4px 0px 0px #3D3D3D;
+  font-family: var(--tg-heading-font-family);
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: var(--tg-fw-semi-bold);
+  color: var(--tg-heading-color);
+}
+
+.tp-course-rating-icon i {
+  font-size: 13px;
+  color: #FFB21D;
+}

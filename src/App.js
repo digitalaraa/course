@@ -15,6 +15,8 @@ import Contact from './pages/contact';
 import Footer from './components/Footer';
 import PrivacyPolicy from './pages/privacypolicy';
 import TermsConditions from './pages/termsconditions';
+import "@fortawesome/fontawesome-free/css/all.min.css";
+
 
 function App() {
   useEffect(() => {

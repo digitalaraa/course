@@ -18,11 +18,11 @@
 {
 --heading-color: #0D0E1D;
 --body-color: #0D0E1D;
---accent-color: #0119FF;
+--accent-color: #07a169;
 --white-color: #ffffff;
 --dark-bg: #0D0E1D;
 --white-bg: #ffffff;
---accent-bg: #0119FF;
+--accent-bg: #07a169;
 --light-bg1: #F5F5F5;
 }
 
@@ -2723,7 +2723,7 @@ header.tekup-header-section.header-seven.sticky-menu {
 }
 .tekup-blog-thumb2:after {
   opacity: 0;
-  background: linear-gradient(180deg, rgba(1, 25, 255, 0) 0%, #0119FF 100%);
+  background: linear-gradient(180deg, rgba(1, 25, 255, 0) 0%, #07a169 100%);
 }
 .tekup-blog-thumb2:hover::before, .tekup-blog-thumb2:hover::after {
   opacity: 1;
@@ -3913,7 +3913,7 @@ h1.post__title {
   transition: all 0.4s;
   position: absolute;
   opacity: 0;
-  background: linear-gradient(180deg, rgba(1, 25, 255, 0) 23.74%, #0119FF 100%);
+  background: linear-gradient(180deg, rgba(1, 25, 255, 0) 23.74%, #07a169 100%);
 }
 .tekup-team-data {
   padding-top: 20px;
@@ -4195,7 +4195,7 @@ h1.post__title {
 }
 .tekup-service-thumb:after {
   opacity: 0;
-  background: linear-gradient(180deg, rgba(1, 25, 255, 0) 0%, #0119FF 100%);
+  background: linear-gradient(180deg, rgba(1, 25, 255, 0) 0%, #07a169 100%);
 }
 .tekup-service-thumb:hover:after {
   opacity: 1;
@@ -5000,7 +5000,7 @@ h1.post__title {
   transition: all 0.4s;
   position: absolute;
   opacity: 0;
-  background: linear-gradient(180deg, rgba(1, 25, 255, 0) 0%, #0119FF 100%);
+  background: linear-gradient(180deg, rgba(1, 25, 255, 0) 0%, #07a169 100%);
 }
 .tekup-portfolio-thumb:hover .tekup-portfolio-data {
   opacity: 1;
@@ -5063,7 +5063,7 @@ h1.post__title {
   transition: all 0.4s;
   position: absolute;
   opacity: 0;
-  background: linear-gradient(180deg, rgba(1, 25, 255, 0) 0%, #0119FF 100%);
+  background: linear-gradient(180deg, rgba(1, 25, 255, 0) 0%, #07a169 100%);
 }
 .tekup-portfolio-thumb2:hover .tekup-portfolio-data2 {
   opacity: 1;
@@ -5197,7 +5197,7 @@ h1.post__title {
   transition: all 0.4s;
   position: absolute;
   opacity: 0;
-  background: linear-gradient(180deg, rgba(1, 25, 255, 0) 0%, #0119FF 100%);
+  background: linear-gradient(180deg, rgba(1, 25, 255, 0) 0%, #07a169 100%);
 }
 .tekup-portfolio-thumb4::after {
   content: "";
@@ -6011,7 +6011,7 @@ input.house-number {
 span.total-amount {
   font-size: 26px;
   font-weight: 600;
-  color: #0119FF;
+  color: #07a169;
 }
 
 .tekup-update-cart.blue-btn.w-full {

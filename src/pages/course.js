@@ -802,7 +802,7 @@ function Courses() {
     };
 
     return (
-        <section className="bd-course-area section-space" style={{ paddingTop: "260px" }}>
+        <section className="bd-course-area section-space" style={{ paddingTop: "160px", paddingBottom: "60px" }}>
             <div className="container">
                 <div className="row g-30 align-items-center justify-content-between mb-30">
                     <div className="course-top-meta d-flex-between flex-wrap-small mb-30 gap-30">

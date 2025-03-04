@@ -2469,3 +2469,30 @@ code {
   font-size: 13px;
   color: #FFB21D;
 }
+
+.bd-course-thumb-wrapper.bd-course-thumb-style.small-style.p-relative {
+  padding: 10px;
+}
+
+.bd-top-sorting-left {
+  margin: 50px 0;
+}
+.bd-course-more-btn.d-flex.justify-content-center.mt-50 {
+  margin-top: 30px;
+}
+
+.btn-outline-border-primary {
+  background-color: #07a169;
+  color: #fff;
+  border: 1px solid #07a169;
+  font-size: 16px;
+  text-transform: capitalize;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 30px;
+  height: 50px;
+  transition: all 0.3slinear;
+  border-radius: 6px;
+    white-space: nowrap;
+}

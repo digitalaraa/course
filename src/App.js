@@ -16,6 +16,7 @@ import Footer from './components/Footer';
 import PrivacyPolicy from './pages/privacypolicy';
 import TermsConditions from './pages/termsconditions';
 import "@fortawesome/fontawesome-free/css/all.min.css";
+import CourseDetails from './pages/coursedetails';
 
 
 function App() {
@@ -42,6 +43,7 @@ function App() {
         <Route path="/contact" element={<Contact />}></Route>
         <Route path="/privacypolicy" element={<PrivacyPolicy />}> </Route>
         <Route path="/termsconditions" element={<TermsConditions />}> </Route>
+        <Route path="/course-details/:id" element={<CourseDetails />}> </Route> 
     </Routes>
     <Footer />
    </Router>

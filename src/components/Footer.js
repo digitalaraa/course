@@ -53,7 +53,6 @@ function Footer () {
                   <li><a href="/about">About Us</a></li>
                   <li><a href="/services">Our Services</a></li>
                   <li><a href="/">Blogs</a></li>
-                  <li><a href="/faq">Faqs</a></li>
                   <li><a href="/contact">Contact Us</a></li>
                 </ul>
               </div>
@@ -68,7 +67,6 @@ function Footer () {
                   <li><a href="/appdevelopment">App Development</a></li>
                   <li><a href="/digitalmarketing">Digital Marketing</a></li>
                   <li><a href="/webdevelopment">Web Development</a></li>
-                  <li><a href="/itManagement">IT Management</a></li>
                 </ul>
               </div>
             </div>
@@ -80,7 +78,6 @@ function Footer () {
                 <ul>
                   <li><a href="/course-details/5">HTML & CSS Mastery</a></li>
                   <li><a href="/course-details/9">SEO & Digital Marketing</a></li>
-                  <li><a href="/course-details/2">React JS from Scratch</a></li>
                   <li><a href="/course-details/4">Advanced UI/UX Research</a></li>
                   <li><a href="/course-details/3">Full Stack JavaScript Bootcamp</a></li>
                 </ul>

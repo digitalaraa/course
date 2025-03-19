@@ -7,7 +7,7 @@ function HeroSlider () {
         <>
         <div
       className="tekup-hero-section"
-      style={{ backgroundImage: "url(../assets/images/hero/hero-bg1.png)" }}
+      style={{ backgroundImage: "url(../assets/images/hero/hero-bg1.jpg)" }}
     >
       <div className="container">
         <div className="row">

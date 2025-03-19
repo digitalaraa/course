@@ -1449,7 +1449,7 @@ import { Link } from "react-router-dom";
 import { allCourses } from "../data/courses";
 
 function Courses() {
-    const [courses, setCourses] = useState(allCourses.slice(0, 3)); // Initial 3 courses
+    const [courses, setCourses] = useState(allCourses.slice(0, 6)); // Initial 3 courses
     const [viewMode, setViewMode] = useState("grid");
     const [isLoading, setIsLoading] = useState(false);
 
@@ -1477,7 +1477,7 @@ function Courses() {
                     </nav>
                 </div>
             </div>
-            <section className="bd-course-area section-space" style={{ paddingTop: "160px", paddingBottom: "70px" }}>
+            <section className="bd-course-area section-space" style={{ paddingTop: "40px", paddingBottom: "70px" }}>
                 <div className="container">
                     <div className="row g-30 align-items-center justify-content-between mb-30">
                         <div className="course-top-meta d-flex-between flex-wrap-small mb-30 gap-30">

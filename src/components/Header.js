@@ -15,13 +15,14 @@ function Header() {
     <>
       <ProgressBar />
       <header
-        className="site-header tekup-header-section site-header--menu-right light-color"
+        className="site-header tekup-header-section site-header--menu-right dark-color"
         id="sticky-menu"
       >
         <HeaderTop />
 
-        <div className="container-fluid  bg-dark">
-          <div className="tekup-header-bottom border_bottom">
+        <div className="container-fluid  bg-light">
+          <div className="tekup-header-bottom border_bottom-old">
+            
             <nav className="navbar site-navbar">
               {/* Brand Logo */}
               <div className="brand-logo">

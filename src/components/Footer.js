@@ -1,5 +1,5 @@
 import React from "react";
-import NewsletterSubscription from "./NewsletterSubscription";
+// import NewsletterSubscription from "./NewsletterSubscription";
 import digitalaraaLogo from '../assets/images/logo/digitalaraa-logo.png'; // Ensure to include the file extension
 
 
@@ -72,7 +72,21 @@ function Footer () {
                 </ul>
               </div>
             </div>
-            <NewsletterSubscription />
+            <div className="col-xl-3 col-md-4">
+              <div className="tekup-footer-menu light-color extar-margin">
+                <div className="tekup-footer-title light-color">
+                  <h5>Courses</h5>
+                </div>
+                <ul>
+                  <li><a href="/course-details/5">HTML & CSS Mastery</a></li>
+                  <li><a href="/course-details/9">SEO & Digital Marketing</a></li>
+                  <li><a href="/course-details/2">React JS from Scratch</a></li>
+                  <li><a href="/course-details/4">Advanced UI/UX Research</a></li>
+                  <li><a href="/course-details/3">Full Stack JavaScript Bootcamp</a></li>
+                </ul>
+              </div>
+            </div>
+            {/* <NewsletterSubscription /> */}
           </div>
         </div>
         <div className="tekup-footer-bottom">

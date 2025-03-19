@@ -2502,7 +2502,6 @@ code {
 }
 
 .bd-course-description {
-  font-size: 14px;
   line-height: 1.5;
   max-height: 3em; /* Adjust for consistency */
   overflow: hidden;
@@ -2792,5 +2791,20 @@ section.bd-course-area.section-space {
 .bd-course-wrapper:hover {
   transform: scale(1.05);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Smooth Hover Animation for bd-course-wrapper */
+.bd-course-wrapper {
+  transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94), 
+              box-shadow 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+              opacity 0.4s ease; /* Added opacity for extra smoothness */
+  transform-origin: center; /* Ensure scaling happens from the center */
+  will-change: transform, box-shadow; /* Optimize for performance */
+}
+
+.bd-course-wrapper:hover {
+  transform: scale(1.03); /* Slightly scale up */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15); /* Softer shadow */
+  opacity: 0.95; /* Slight fade for a smooth effect */
 }
 

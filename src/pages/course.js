@@ -1,8 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { allCourses } from "../data/courses";
+import WhatsAppButton from '../components/WhatsAppButton';
 
 function Courses() {
+    const phoneNumber = '918667853720'; // Replace with your WhatsApp number
+    const message = 'Hello, I am interested in your courses.';
+
     const [courses, setCourses] = useState(allCourses.slice(0, 6)); // Initial 6 courses
     const [viewMode, setViewMode] = useState("grid"); // State for grid or list view
     const [isLoading, setIsLoading] = useState(false); // State for loading more courses
@@ -167,6 +171,7 @@ function Courses() {
                         </div>
                     </div>
                 </div>
+                <WhatsAppButton phoneNumber={phoneNumber} message={message} />
             </section>
         </>
     );

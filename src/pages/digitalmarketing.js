@@ -2,16 +2,16 @@ import React from "react";
 import ServiceSidebar from "../components/ServiceSidebar";
 import ContactSection from "../components/ContactSection";
 
-function AppDevelopment () {
+function DigitalMarketing () {
     return (
         <>
-        <div className="tekup-breadcrumb" style={{ backgroundImage: 'url(/assets/images/hero/appdevelopment-banner.jpg)' }}>
+        <div className="tekup-breadcrumb" style={{ backgroundImage: 'url(/assets/images/hero/banner.jpg)' }}>
           <div className="container">
-            <h1 className="post__title">App Development</h1>
+            <h1 className="post__title">Digital Marketing</h1>
             <nav className="breadcrumbs">
               <ul>
                 <li><a href="/">Home</a></li>
-                <li aria-current="page">App Development</li>
+                <li aria-current="page">Digital Marketing</li>
               </ul>
             </nav>
           </div>
@@ -22,28 +22,29 @@ function AppDevelopment () {
             <div className="row">
               <div className="col-lg-8">
                 <div className="tekup-service-details-wrap" data-aos="fade-up" data-aos-duration="600">
-                  <img src="/assets/images/hero/appdevelopment-banner.jpg" alt="App Development" />
+                  <img src="/assets/images/hero/4.jpg" alt="Digital Marketing" />
                   <div className="tekup-service-details-item">
                     <h3>Overview</h3>
-                    <p>Our App Development services help businesses reach their target audiences through robust and scalable mobile applications. We focus on creating seamless experiences on iOS and Android platforms that drive engagement and improve customer satisfaction.</p>
+                    <p>Our Digital Marketing services help businesses connect with their target audience online. We specialize in SEO, social media marketing, content creation, and paid campaigns that drive traffic and improve brand awareness.</p>
                   </div>
                   <div className="tekup-service-details-item">
                     <h3>Features</h3>
                     <ul>
-                      <li><i className="ri-check-line"></i> Cross-platform development</li>
-                      <li><i className="ri-check-line"></i> User-friendly interfaces</li>
-                      <li><i className="ri-check-line"></i> High performance and scalability</li>
-                      <li><i className="ri-check-line"></i> Robust security features</li>
+                      <li><i className="ri-check-line"></i> SEO and SEM strategies</li>
+                      <li><i className="ri-check-line"></i> Social media marketing</li>
+                      <li><i className="ri-check-line"></i> Pay-per-click advertising</li>
+                      <li><i className="ri-check-line"></i> Content creation and optimization</li>
+                      <li><i className="ri-check-line"></i> Analytics and reporting</li>
                     </ul>
                   </div>
                   <div className="tekup-service-details-item">
                     <h3>Goal</h3>
-                    <p>We aim to deliver high-quality mobile applications that enable our clients to stay ahead of the competition while providing their users with excellent mobile experiences.</p>
+                    <p>Our goal is to provide businesses with the tools and strategies they need to reach and engage their customers through digital channels, ultimately driving growth and improving ROI.</p>
                   </div>
                 </div>
               </div>
               <div className="col-lg-4">
-                <ServiceSidebar />
+                  <ServiceSidebar />
               </div>
             </div>
           </div>
@@ -54,7 +55,7 @@ function AppDevelopment () {
             <div className="tekup-cta-wrap">
               <div className="tekup-cta-content center">
                 <h2>Let’s work together</h2>
-                <p>We are architects of innovation, trailblazers of advancement, and partners in your success. As a dynamic and forward-thinking team, we’re ready to take your app development to the next level.</p>
+                <p>We are architects of innovation, trailblazers of advancement, and partners in your success. As a dynamic and forward-thinking team, we’re ready to take your digital marketing strategy to the next level.</p>
                 <div className="tekup-extra-mt" data-aos="fade-up" data-aos-duration="600">
                   <a className="tekup-default-btn tekup-white-btn" href="/contact">Start a Project <i className="ri-arrow-right-up-line"></i></a>
                 </div>
@@ -68,4 +69,4 @@ function AppDevelopment () {
     )
 }
 
-export default AppDevelopment;
+export default DigitalMarketing;

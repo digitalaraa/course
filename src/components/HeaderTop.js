@@ -12,7 +12,12 @@ const HeaderTop = () => {
         </div>
         <div className="tekup-header-info">
           <ul>
-            <li><a href="tel:+918667853720"><i className="ri-phone-fill"></i>8667853720</a></li>
+            {/* <li><a href="tel:+918667853720"><i className="ri-phone-fill"></i>8667853720</a></li> */}
+            <li>
+              <a href="tel:+918667853720" aria-label="Call us at +91 86678 53720">
+                <i className="ri-phone-fill"></i> +91 86678 53720
+              </a>
+            </li>
             <li><a href="mailto:digitalaraa@gmail.com"><i className="ri-mail-fill"></i>digitalaraa@gmail.com</a></li>
           </ul>
         </div>

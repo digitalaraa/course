@@ -72,8 +72,6 @@ const ContactSection = () => {
                   <i className="ri-map-pin-2-fill" />
                   <h5>Address</h5>
                   <p>
-                    No 213, NGGO Colony,
-                    <br />
                     Coimbatore,
                     <br />
                     Tamilnadu, India.

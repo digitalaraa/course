@@ -22,6 +22,7 @@
     "framer-motion": "^12.5.0",
     "jquery": "^3.7.1",
     "magnific-popup": "^1.2.0",
+    "nodemailer": "^6.10.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-helmet": "^6.1.0",

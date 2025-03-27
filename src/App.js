@@ -22,6 +22,7 @@ import AppDevelopment from './pages/appdevelopment';
 import DigitalMarketing from './pages/digitalmarketing';
 import WebDevelopment from './pages/webdevelopment';
 import WhatsAppButton from './components/WhatsAppButton'; // Import the WhatsApp button
+import EnrollForm from './components/EnrollForm';
 function App() {
   useEffect(() => {
     // Initialize AOS animations
@@ -51,6 +52,7 @@ function App() {
         <Route path="/privacypolicy" element={<PrivacyPolicy />}> </Route>
         <Route path="/termsconditions" element={<TermsConditions />}> </Route>
         <Route path="/course-details/:id" element={<CourseDetails />}> </Route> 
+        <Route path="/enroll" element={<EnrollForm />} />
     </Routes>
     <Footer />
     <WhatsAppButton />

@@ -2961,7 +2961,7 @@ button#tekup-subscription-btn i:hover {
   position: absolute;
   background-size: cover;
   background-position: center center;
-  background-image: url(../images/breadcrumb/overlay.png);
+  background: linear-gradient(180deg, rgba(1, 25, 255, 0) 0, #07a169 100%);
 }
 @media (max-width: 991px) {
   .tekup-breadcrumb {
@@ -3099,7 +3099,7 @@ h1.post__title {
 }
 
 .bg-cover {
-  background-size: cover;
+  background: linear-gradient(180deg, rgba(1, 25, 255, 0) 0, #07a169 100%) !important;
   background-position: center;
 }
 
@@ -3151,7 +3151,8 @@ h1.post__title {
   width: 100%;
   height: 100%;
   position: absolute;
-  background-image: url(../images/v1/overlay.png);
+  background: linear-gradient(180deg,rgba(1,25,255,0) 0,#07a169 100%);
+  
 }
 .tekup-hero-content {
   position: relative;

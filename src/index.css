@@ -2905,68 +2905,69 @@ a:hover {
   color: #007bff;
 }
 
-
-/* FAQ Section */
-/* .faq-section {
-  margin-top: 2rem;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0 1rem;
+.enroll-form {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-.faq-title {
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: #2d3748;
-  margin-bottom: 1.5rem;
+.enroll-form h2 {
   text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  color: #333;
 }
 
-.faq-item {
-  background: #ffffff;
-  border: 1px solid #e2e8f0;
-  border-radius: 8px;
-  margin-bottom: 1rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
+.form-group {
+  margin-bottom: 1.5rem;
 }
 
-.faq-item:hover {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-}
-
-.faq-item.active {
-  border-color: #4299e1;
-}
-
-.faq-question {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1rem;
-  cursor: pointer;
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
   font-weight: 500;
-  color: #2d3748;
+  color: #555;
 }
 
-.faq-question .faq-icon {
-  margin-right: 1rem;
-  color: #4299e1;
-  transition: transform 0.3s ease;
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #333;
 }
 
-.faq-item.active .faq-question .faq-icon {
-  transform: rotate(180deg);
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: #07a169;
+  box-shadow: 0 0 0 2px rgba(7, 161, 105, 0.2);
 }
 
-.faq-question .faq-text {
-  flex: 1;
+.submit-button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #07a169;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.faq-answer {
-  padding: 0 1rem 1rem 1rem;
-  color: #4a5568;
-  line-height: 1.6;
-  font-size: 0.95rem;
-} */
+.submit-button:hover {
+  background-color: #055c3d;
+}
+
+.success-message {
+  text-align: center;
+  color: #07a169;
+  font-size: 1.2rem;
+  font-weight: 500;
+}

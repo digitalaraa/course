@@ -37,14 +37,13 @@
 .enroll-button {
     display: block;
     width: 100%;
-    max-width: 200px;
+    max-width: 220px;
     margin: 20px auto;
-    padding: 10px 20px;
+    padding: 15px 5px;
     font-size: 1.2rem;
     background-color: #07a169;
     color: white;
     border: none;
-    border-radius: 5px;
     cursor: pointer;
 }
 
@@ -394,3 +393,24 @@
     color: #666;
 }
 
+
+
+.enroll-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: #07a169;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none; /* Remove underline from Link */
+    margin: 1.5rem 0;
+}
+
+.enroll-button:hover {
+    background-color: #055c3d;
+}

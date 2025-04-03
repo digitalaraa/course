@@ -776,7 +776,7 @@ const ContactSection = () => {
                                 <div className="tekup-contact-info mb-0">
                                     <i className="ri-map-pin-2-fill" />
                                     <h5>Address</h5>
-                                    <p>Coimbatore,<br />Tamilnadu,<br />India.</p>
+                                    <p>Coimbatore, Tamilnadu,<br />India.</p>
                                 </div>
                                 <div className="tekup-contact-info mb-0">
                                     <i className="ri-mail-fill" />

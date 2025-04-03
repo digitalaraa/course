@@ -63,12 +63,99 @@ const CourseDetails = () => {
                 <p className="course-description zoom-in">{course.description}</p>
                 
                 {/* Updated Enroll Now Button */}
-                <button onClick={handleEnrollClick} className="enroll-button pulse">
+                {/* <button onClick={handleEnrollClick} className="enroll-button pulse">
                     Enroll Now
-                </button>
-                
-                <div className="faq-section">
-                    <h2>📌 Frequently Asked Questions</h2>
+                </button> */}
+                <div style={{ 
+  display: 'flex', 
+  justifyContent: 'center',
+  margin: '24px 0'
+}}>
+  <button
+    onClick={handleEnrollClick}
+    style={{
+      position: 'relative',
+      padding: '14px 36px',
+      minWidth: '200px',
+      borderRadius: '8px',
+      background: '#07a169',
+      color: 'white',
+      border: 'none',
+      fontSize: '1rem',
+      fontWeight: '600',
+      cursor: 'pointer',
+      boxShadow: '0 4px 6px rgba(0,0,0,0.1)',
+      transition: 'all 0.3s ease',
+      overflow: 'hidden',
+      zIndex: 1
+    }}
+    onMouseOver={(e) => {
+      e.currentTarget.style.transform = 'translateY(-2px)';
+      e.currentTarget.style.boxShadow = '0 6px 12px rgba(0,0,0,0.15)';
+    }}
+    onMouseOut={(e) => {
+      e.currentTarget.style.transform = 'translateY(0)';
+      e.currentTarget.style.boxShadow = '0 4px 6px rgba(0,0,0,0.1)';
+    }}
+  >
+    <span style={{ position: 'relative', zIndex: 2 }}>Enroll Now</span>
+    <span style={{
+      position: 'absolute',
+      top: 0,
+      left: 0,
+      width: '100%',
+      height: '100%',
+      background: 'linear-gradient(135deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0) 100%)',
+      zIndex: 1
+    }}></span>
+  </button>
+</div>
+                <div className="pro-faq-section">
+  <h2 className="faq-title">Frequently Asked Questions</h2>
+  <div className="faq-container">
+    {course.faq.map((item, index) => (
+      <div
+        key={index}
+        className={`faq-card ${activeFAQ === index ? 'active' : ''}`}
+        onClick={() => toggleFAQ(index)}
+      >
+        <div className="faq-header">
+          <h3 className="faq-question">{item.question}</h3>
+          <span className="faq-icon">
+            {activeFAQ === index ? (
+              <FaChevronUp className="text-primary" />
+            ) : (
+              <FaChevronDown className="text-muted" />
+            )}
+          </span>
+        </div>
+        
+        <AnimatePresence>
+          {activeFAQ === index && (
+            <motion.div
+              initial={{ opacity: 0, height: 0 }}
+              animate={{ opacity: 1, height: 'auto' }}
+              exit={{ opacity: 0, height: 0 }}
+              transition={{ duration: 0.3, ease: 'easeInOut' }}
+              className="faq-content"
+            >
+              <div className="faq-answer">
+                {item.answer}
+              </div>
+              {item.additionalInfo && (
+                <div className="faq-extra mt-3 p-3 bg-light rounded">
+                  {item.additionalInfo}
+                </div>
+              )}
+            </motion.div>
+          )}
+        </AnimatePresence>
+      </div>
+    ))}
+  </div>
+</div>
+                {/* <div className="faq-section">
+                    <h2>Frequently Asked Questions</h2>
                     {course.faq.map((item, index) => (
                         <div
                             key={index}
@@ -93,7 +180,7 @@ const CourseDetails = () => {
                             </AnimatePresence>
                         </div>
                     ))}
-                </div>
+                </div> */}
             </div>
         </>
     );

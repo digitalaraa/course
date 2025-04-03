@@ -7,7 +7,7 @@ function Courses() {
     const phoneNumber = '918667853720'; // Replace with your WhatsApp number
     const message = 'Hello, I am interested in your courses.';
 
-    const [courses, setCourses] = useState(allCourses.slice(0, 6)); // Initial 6 courses
+    const [courses, setCourses] = useState(allCourses.slice(0, 9)); // Initial 6 courses
     const [viewMode, setViewMode] = useState("grid"); // State for grid or list view
     const [isLoading, setIsLoading] = useState(false); // State for loading more courses
 
@@ -144,9 +144,14 @@ function Courses() {
                                                         <Link to={`/course-details/${course.id}`}>{course.title}</Link>
                                                     </h5>
                                                     <p className="bd-course-description mb-10">{course.description}</p>
-                                                    <Link className="bd-btn btn-outline-primary-old" to={`/course-details/${course.id}`}>
+                                                    <div className="d-flex justify-content-center my-4">
+                                                    <Link 
+                                                        className="bd-btn btn-outline-primary-old tekup-default-btn tekup-default-btn-course" 
+                                                        to={`/course-details/${course.id}`}
+                                                    >
                                                         Enroll Now
                                                     </Link>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>

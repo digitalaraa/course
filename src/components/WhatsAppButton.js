@@ -3,7 +3,7 @@ import React from 'react';
 const WhatsAppButton = ({ phoneNumber, message }) => {
   // Ensure default values are used if props are undefined
   const finalPhoneNumber = phoneNumber || '918667853720';
-  const finalMessage = message || 'Hello, I am interested in your services/courses.';
+  const finalMessage = message || 'Hello, I am interested in your services/courses.' || message;
 
   const whatsappUrl = `https://wa.me/${finalPhoneNumber}?text=${encodeURIComponent(finalMessage)}`;
 

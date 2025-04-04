@@ -105,3 +105,7 @@
     transform: translateX(0);
   }
 }
+
+.course-title {
+  color: #0d0e1d !important;    
+}

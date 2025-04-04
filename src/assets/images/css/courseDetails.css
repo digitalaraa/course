@@ -414,3 +414,6 @@
 .enroll-button:hover {
     background-color: #055c3d;
 }
+.course-title {
+    color: #0d0e1d !important;    
+  }

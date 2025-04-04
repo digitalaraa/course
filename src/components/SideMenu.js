@@ -10,52 +10,54 @@ const SideMenu = () => {
           <div className="tekup-sidemenu-body">
             <div className="tekup-sidemenu-logo">
               <Link to="/about">
-                <img src="assets/images/v1/logo.svg" alt="Logo" />
+                <img src="assets/images/v1/logo.svg" alt="DigitalAraa Logo" />
               </Link>
             </div>
             <p>
-              Vast numbers of employees now work remotely, and it’s too late to
-              develop a set of remote-work policies if you didn’t already have one.
+              DigitalAraa is a premier digital agency specializing in web development, 
+              mobile apps, UI/UX design, and digital marketing solutions to help 
+              businesses thrive in the digital landscape.
             </p>
             <div className="tekup-sidemenu-thumb">
-              <img src="assets/images/hero/hero-bg1.png" alt="Background" />
+              <img src="assets/images/hero/hero-bg1.png" alt="DigitalAraa Team" />
             </div>
             <div className="tekup-contact-info-wrap">
               <div className="tekup-contact-info">
                 <i className="ri-map-pin-2-fill" />
                 <h5>Address</h5>
                 <p>
-                  1791 Yorkshire Circle Kitty
-                  <br />
-                  Hawk, NC 279499
+                  Digital Araa<br />
+                  Coimbatore, <br />
+                  Tamilnadu,<br />
+                  India.<br />
                 </p>
               </div>
               <div className="tekup-contact-info">
                 <i className="ri-mail-fill" />
                 <h5>Contact</h5>
-                <a href="mailto:info@mthemeus.com">info@mthemeus.com</a>
-                <a href="tel:5185643200">518-564-3200</a>
+                <a href="mailto:digitalaraa@gmail.com">digitalaraa@gmail.com</a>
+                <a href="tel:+918667853720">+91 86678 53720</a>
               </div>
             </div>
             <div className="tekup-social-icon-box">
               <ul>
                 <li>
-                  <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+                  <a href="https://www.facebook.com/digitalaraa" target="_blank" rel="noopener noreferrer">
                     <i className="ri-facebook-fill" />
                   </a>
                 </li>
                 <li>
-                  <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+                  <a href="https://www.linkedin.com/company/digitalaraa" target="_blank" rel="noopener noreferrer">
                     <i className="ri-linkedin-fill" />
                   </a>
                 </li>
                 <li>
-                  <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
+                  <a href="https://twitter.com/digitalaraa" target="_blank" rel="noopener noreferrer">
                     <i className="ri-twitter-fill" />
                   </a>
                 </li>
                 <li>
-                  <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                  <a href="https://www.instagram.com/digitalaraa" target="_blank" rel="noopener noreferrer">
                     <i className="ri-instagram-fill" />
                   </a>
                 </li>

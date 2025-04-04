@@ -3,6 +3,15 @@ import React from 'react';
 
 const ProgressBar = () => {
   return (
+    <>
+    <div className="tekup-preloader-wrap">
+      <div className="tekup-preloader">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
     <div className="progress-bar-container">
       <div className="progress-bar" />
       {/* Progress Circle */}
@@ -22,6 +31,7 @@ const ProgressBar = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

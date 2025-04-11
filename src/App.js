@@ -23,6 +23,7 @@ import DigitalMarketing from './pages/digitalmarketing';
 import WebDevelopment from './pages/webdevelopment';
 import WhatsAppButton from './components/WhatsAppButton'; // Import the WhatsApp button
 import EnrollForm from './components/EnrollForm';
+import ScrollToTop from './components/ScrollToTop';
 function App() {
   useEffect(() => {
     // Initialize AOS animations
@@ -38,6 +39,7 @@ function App() {
   return (
    <>
    <Router>
+    <ScrollToTop /> 
     <Header />
     <Routes>
         <Route path="/" element={<Home />}></Route>

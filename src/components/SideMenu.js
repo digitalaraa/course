@@ -57,7 +57,7 @@ const SideMenu = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="https://www.instagram.com/digitalaraa" target="_blank" rel="noopener noreferrer">
+                  <a href="https://www.instagram.com/digitalaraa29" target="_blank" rel="noopener noreferrer">
                     <i className="ri-instagram-fill" />
                   </a>
                 </li>

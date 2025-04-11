@@ -36,7 +36,7 @@ function Footer () {
                       </a>
                     </li>
                     <li>
-                      <a href="https://www.instagram.com/">
+                      <a href="https://www.instagram.com/digitalaraa29">
                         <i className="ri-instagram-fill"></i>
                       </a>
                     </li>

@@ -97,7 +97,7 @@ code {
 }
 .bd-course-thumb-style .bd-course-overly-title {
   position: absolute;
-  top: 50%;
+  top: 44%;
   width: 100%;
   left: 50%;
   transform: translateX(-50%);
